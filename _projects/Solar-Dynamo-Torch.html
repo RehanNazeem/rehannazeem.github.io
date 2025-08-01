@@ -1,0 +1,65 @@
+---
+title: "Solar Dynamo Torch"
+excerpt: "Created a torch that does not need to be recharged as it uses multiple forms of energy. <br/><img src='/images/SolarTorch.png'>"
+collection: projects
+---
+
+<h3>Proof of Efficacy</h3>
+
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vQMlzrNDDxBuZSZXGQunR5CSu5Iu9Qx9Sr_ERnyPgjmfs38PXxoKXy3dnU1GZ49y8FNxuNpW6q_y5CK/pub?embedded=true" width="100%" height="600" style="border:none;"></iframe>
+
+<p>
+This project allowed me to combine two areas I’ve always been passionate about: energy science and electronics. I set out to build a device that could take inputs from both the human body and sunlight and store them as usable electrical energy. The goal was to design a lighting device that worked entirely off-grid, using both mechanical cranking and solar charging to power ultra-bright LEDs.
+</p>
+
+<p>
+The finished system is a hybrid torch powered by a hand crank and a solar panel. Cranking transforms the chemical energy from food into kinetic energy, which spins a rotor inside a dynamo and creates electricity through Faraday’s Law. At the same time, the solar panel captures energy from sunlight and converts it into current via the photovoltaic effect. Both energy sources charge a NiMH rechargeable battery, which stores energy chemically until it’s discharged to power LEDs.
+</p>
+
+<h3>Design and Build Process</h3>
+
+<p>
+The heart of the device was the circuitry. I built the circuit around a pre-made PCB that handled power regulation and current direction. The board included blocking diodes to prevent backflow, resistors to limit current to the LEDs, and capacitors to stabilize voltage spikes from the crank-powered dynamo. I mapped out the wiring so that both the dynamo and solar panel could feed into the battery without interfering with each other. This ensured that energy from either input could be safely stored and later drawn by the LEDs.
+</p>
+
+<p>
+Designing the circuit required me to think through current paths, voltage thresholds, and component tolerances. I had to calculate total energy input using E = V × I × T and ensure that my battery voltage would be high enough to drive the LEDs efficiently without overloading the system. Every connection, polarity, and junction had to be correct for the system to function without damaging sensitive components.
+</p>
+
+<p>
+Once I finalized the circuit, I turned to the physical housing. I used CAD software to design a compact shell that could hold the battery, crankshaft, internal gear system, PCB, solar panel, and LEDs in place. I printed the case using a 3D printer with PLA filament, slicing the file with Cura to ensure proper tolerances for press-fit and screw-mount components. The case had to be both lightweight and strong, with cutouts for airflow and wire access. I printed several prototypes to test tolerances before settling on a final version that kept all components secure and aligned.
+</p>
+
+<p>
+The crank assembly used a 1:12 gear ratio to multiply the rotations of the handle and spin the dynamo rotor at a higher angular velocity. I calculated rotational kinetic energy using KE = ½ Iω² and verified that the torque felt manageable while still generating a strong current. The solar panel was mounted flush into the case and connected through a voltage regulator before feeding into the battery. Together, the system stored about 4.03 joules and produced around 1.92 joules of light energy, which gave an efficiency of 47.7 percent.
+</p>
+
+<h3>Energy Science and Concepts</h3>
+
+<p>
+This project pushed me to apply advanced energy concepts in a hands-on setting. The first transformation started with the human body: glucose is broken down during cellular respiration, releasing energy (ΔH ≈ -2800 kJ/mol) to power muscle contractions. That energy turned the crank, initiating motion that the dynamo converted into electricity. The dynamo worked through electromagnetic induction—rotating magnets created a changing magnetic field through coils of wire, generating voltage according to Faraday’s Law.
+</p>
+
+<p>
+At the same time, photons from sunlight struck the silicon in the solar panel, exciting electrons and releasing them as current through the photovoltaic effect. This process is endothermic, absorbing about 106.1 kJ/mol of photon energy. I calculated these enthalpy changes and tracked where energy was absorbed or released at each stage, from chemical inputs to electrical outputs to light emission. The system obeyed conservation of energy: energy wasn’t lost, only transformed, with some waste converted to heat.
+</p>
+
+<p>
+The rechargeable NiMH battery stored energy chemically using a redox reaction. During charging, electrons forced into the battery converted NiOOH and MH into Ni(OH)₂ and M. Later, those reactions reversed during discharge to power the LEDs. Understanding these processes helped me optimize how energy moved through the system and guided decisions on component choice and layout.
+</p>
+
+<h3>Engineering Concepts and Lessons</h3>
+
+<p>
+Combining energy science and electronics gave me a clearer understanding of how real-world systems function. I learned how to take abstract equations and apply them to physical problems—whether calculating gear torque, optimizing current paths, or understanding electron flow. I also saw how design choices, like adding diodes or selecting a gear ratio, directly impacted performance and reliability.
+</p>
+
+<p>
+The 3D printing process helped bridge the gap between circuitry and structure. It gave me full control over how components fit together, which meant I could prioritize both durability and compactness. I printed each part with different layer heights and infill densities depending on the stress load and tolerance required. The gear mechanism, for example, needed high precision to avoid slipping and maximize rotation transfer.
+</p>
+
+<h3>Reflection</h3>
+
+<p>
+This project brought together everything I love about engineering—problem solving, hands-on fabrication, and applied science. I was able to design a system from the ground up that used real chemistry, real electricity, and real physics to function. I had to troubleshoot, recalculate, and rethink multiple times, but seeing the LEDs light up from both the crank and the sun was worth all the effort.
+</p>
