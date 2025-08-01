@@ -1,0 +1,65 @@
+---
+title: "Robot National Anthem"
+excerpt: "Created a circuit and coded an arduino to play the star spangled banner <br/><img src='/images/robot_anthem.png'>"
+collection: projects
+---
+
+<h3>Video Demonstration</h3>
+
+<iframe 
+  width="560" 
+  height="315" 
+  src="https://drive.google.com/file/d/1SmioDaAkjY0HnWm8Yi-UKzV9dsg7PC-4/preview" 
+  title="Robot Star-Spangled Banner" 
+  frameborder="0" 
+  allow="autoplay; encrypted-media" 
+  allowfullscreen>
+</iframe>
+
+<h3>Project Overview</h3>
+
+<p>
+This project was designed to bring the Star-Spangled Banner to life using circuits, programming, and creative design. After running experiments with electromagnets and working with an Arduino board, I created a robot that performed the national anthem using sound, visuals, and motion.
+</p>
+
+<p>
+The robot featured:
+<ul>
+<li>A <strong>buzzer</strong> that played the melody of the Star-Spangled Banner</li>
+<li>An <strong>LCD screen</strong> that displayed the lyrics in real time</li>
+<li><strong>Red and blue LEDs</strong> that pulsed in rhythm with the music</li>
+<li>A <strong>servo motor</strong> that waved a miniature flag</li>
+</ul>
+</p>
+
+<h3>Build</h3>
+
+<p>
+I began by getting each part to work individually. Once the buzzer, LCD, LEDs, and servo motor were all functioning, I combined them into one system. At first, nothing synced correctly since Arduino code runs one line at a time.
+</p>
+
+<p>
+To fix that, I wrote separate functions for each component and placed them inside a larger function. I then called that function from inside the <code>loop()</code> so everything would operate in sync. To time the music and actions correctly, I used a variable <code>N</code> to represent a quarter note and calculated other note lengths based on it. That allowed the lights, lyrics, and flag movements to follow the rhythm of the song.
+</p>
+
+<p>
+The timing logic and coordination between components made the code the most important part of the project. Without clean structure and precise control, the hardware would not have worked the way I envisioned.
+</p>
+
+<h3>Code</h3>
+
+<iframe 
+  src="https://app.arduino.cc/sketches/38e69731-6839-4cba-b236-d7c5b8331e2d?view-mode=embed" 
+  style="height:510px;width:100%;margin:10px 0" 
+  frameborder="0">
+</iframe>
+
+<h3>Reflection</h3>
+
+<p>
+This project showed me how code can drive both function and creativity at the same time. I learned how small timing errors or disorganized functions can throw off an entire sequence, and how to build systems that feel smooth and intentional. I also got better at thinking ahead when writing code so different components could work together without interfering with each other.
+</p>
+
+<p>
+One of the most rewarding parts of this project was seeing the system come alive in sync—music playing, lights pulsing, lyrics scrolling, and the flag waving in time. Every element depended on careful logic and thoughtful design. The final result felt complete because it combined engineering, precision, and a sense of performance.
+</p>
