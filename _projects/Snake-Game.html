@@ -1,0 +1,68 @@
+---
+title: "Snake Game"
+excerpt: "my own twist on the classic snake game <br/><img src='/images/SnakeGame.png'>"
+collection: projects
+---
+
+
+<h3>Play Demo</h3>
+
+<iframe 
+  width="392" 
+  height="620" 
+  style="border: 0px;" 
+  src="https://studio.code.org/projects/applab/N4fTosYI4fX2iDFnrcRU-J1ERwTbA-3EDKlpYU-cXH4/embed">
+</iframe>
+
+<p>
+I recreated the classic Snake game in App Lab, then layered in my own mechanics, difficulty scaling, and user interface features to make it feel like a complete, modern game. This project was created for my AP Computer Science Principles Create Task, and every feature—from gameplay logic to UI flow—was designed and implemented by me from scratch.
+</p>
+
+<h3>Gameplay and Features</h3>
+
+<p>
+The game starts at Level 1 with familiar Snake gameplay: use the arrow keys or WASD to guide the snake toward red fruit. Each fruit increases the player’s score and extends the snake’s length by one unit. Once the player earns 5 points, the game transitions to Level 2. At this stage, the snake’s speed increases, making movement feel sharper and requiring faster reaction time.
+</p>
+
+<p>
+At 8 points, the game enters Level 3, where I introduced a custom-designed hazard system. Randomly placed dynamites begin to appear across the map at timed intervals. These hazards are unpredictable and force the player to think carefully about each move. The dynamites are only visible for a short time and are placed relative to the snake’s position, making them feel dynamic instead of random. If the snake collides with a dynamite, the game ends immediately. Along with collisions into the wall or self, this creates a multi-layered challenge that ramps up intensity as the game progresses.
+</p>
+
+<h3>Development and Logic</h3>
+
+<p>
+I structured the game using screen transitions to control flow. There are dedicated screens for the start menu, instructions, gameplay, and the end screen, each connected by event handlers. This made the interface more intuitive for users and allowed for reset conditions without needing to reload the program.
+</p>
+
+<p>
+The snake movement was created using a timed loop. I used a custom object to manage the snake's position, length, and movement direction. Each time the snake eats a fruit, a new square is added to the tail, and the score is updated. I implemented precise collision detection to check if the snake has run into a wall, itself, or a dynamite.
+</p>
+
+<p>
+To track score progression and transitions, I created thresholds for Level 2 and Level 3. When each threshold is reached, the game adapts in real time: the loop speed increases in Level 2, and a new timed loop is activated in Level 3 to trigger dynamite generation. Dynamites are placed using a coordinate system that ensures they don’t overlap with the snake or the fruit, and are only placed in safe areas within the bounds of the game screen.
+</p>
+
+<p>
+I also added logic to store and display the highest score across multiple rounds. Every time the player finishes a game, their score is recorded in a list, and the highest value is displayed on the end screen and game UI.
+</p>
+
+<h3>Features I Added</h3>
+
+<ul>
+  <li>Three-level progression system with dynamic speed changes</li>
+  <li>Dynamite hazards that spawn randomly in Level 3</li>
+  <li>Custom collision logic to end the game if the snake hits a dynamite</li>
+  <li>High score tracking across all play sessions</li>
+  <li>Game reset and replay functionality with screen transitions</li>
+  <li>Instruction panel to explain controls and objectives</li>
+</ul>
+
+<h3>Reflection</h3>
+
+<p>
+This project taught me how to design a fully interactive game from the ground up. I didn’t rely on libraries or prebuilt engines, so I had to figure out how to manage game state, user input, object movement, collision detection, and screen control entirely through my own logic. I’m especially proud of how I handled dynamic hazard spawning and real-time difficulty scaling, which made the game feel more alive and unpredictable as it progressed.
+</p>
+
+<p>
+More than anything, this project helped me grow as a programmer by showing me how complexity can emerge from simple building blocks. Adding dynamite hazards and level transitions gave the game structure and made it feel more complete. It pushed me to keep testing, tweaking, and improving until every part of the system worked exactly how I wanted.
+</p>
