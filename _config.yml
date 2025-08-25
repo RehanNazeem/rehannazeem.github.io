@@ -22,10 +22,10 @@ repository               : "rehannazeem/rehannazeem.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : ".jpg"
+  avatar           : #""
   name             : "Rehan Nazeem"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : #"Short biography for the left-hand sidebar"
   location         : "Novato, California"
   employer         : "San Marin High School"
   uri              : # URL
