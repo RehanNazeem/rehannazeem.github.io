@@ -7,5 +7,5 @@ redirect_from:
   - /about.html
 ---
 
-Add introduction later
+Welcome to my Portfolio! Here you can see the projects i have done.
 
